@@ -115,4 +115,51 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'all-events.html'; // Ganti dengan URL yang sesuai
         });
     }
+
+    document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            const langSwitcherLinks = document.querySelectorAll('.lang-switcher');
+
+            langSwitcherLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); 
+                    const destinationUrl = this.href; 
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = destinationUrl; 
+                    }, 400);
+                });
+            });
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                successMessage.classList.remove('hidden');
+                contactForm.reset();
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        });
 });
