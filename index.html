@@ -259,49 +259,67 @@
     </nav>
 
     <section
-      id="home"
-      class="hero-gradient text-white relative overflow-hidden flex flex-col md:flex-row items-center h-auto md:h-[550px]"
-    >
-      <!-- Konten kiri -->
-      <div
-        class="relative z-10 w-full md:w-1/2 px-6 sm:px-10 md:pl-20 lg:pl-28 py-16 md:py-0 text-center md:text-left"
-      >
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Kembangkan Skill Profesional Anda Bersama Kami
-        </h1>
-        <p class="text-lg md:text-xl mb-8 opacity-90 max-w-md mx-auto md:mx-0">
-          LPK NexGen menyediakan pelatihan berkualitas dengan sertifikasi resmi
-          untuk meningkatkan kompetensi kerja Anda.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
-        >
-          <a
-            href="#programs"
-            class="btn-gold text-white font-medium rounded-lg px-6 py-3 text-center transition-all hover:opacity-90 shadow-lg"
-          >
-            Lihat Program
-          </a>
-          <a
-            href="#contact"
-            class="btn-blue text-white font-medium rounded-lg px-6 py-3 text-center transition-all hover:opacity-90 shadow-lg"
-          >
-            Daftar Sekarang
-          </a>
-        </div>
-      </div>
+  id="home"
+  class="hero-gradient text-white relative overflow-hidden flex flex-col md:flex-row items-center h-auto md:h-[550px]"
+>
+  <!-- Gambar melengkung (khusus mobile) -->
+  <div class="absolute inset-0 flex justify-center items-center md:hidden overflow-hidden">
+    <div
+      class="w-full h-full bg-cover bg-center rounded-l-[120px] opacity-60"
+      style="background-image: url('images/1.jpg')"
+    ></div>
+  </div>
 
-      <!-- Gambar kanan (desktop) / bawah (mobile) -->
-      <div
-        class="relative w-full md:w-1/2 h-[300px] md:h-full overflow-hidden rounded-t-3xl md:rounded-l-full md:rounded-t-none mt-10 md:mt-0"
+  <!-- Overlay gradasi gelap di mobile -->
+  <div
+    class="absolute inset-0 md:hidden bg-gradient-to-b from-black/40 via-black/30 to-transparent z-0"
+  ></div>
+
+  <!-- Konten kiri -->
+  <div
+    class="relative z-10 w-full md:w-1/2 px-6 sm:px-10 md:pl-20 lg:pl-28 py-20 md:py-0 text-center md:text-left"
+  >
+    <h1
+      class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+    >
+      Kembangkan Skill Profesional Anda Bersama Kami
+    </h1>
+    <p
+      class="text-lg md:text-xl mb-8 opacity-95 max-w-md mx-auto md:mx-0 drop-shadow-[0_1px_5px_rgba(0,0,0,0.6)]"
+    >
+      LPK NexGen menyediakan pelatihan berkualitas dengan sertifikasi resmi
+      untuk meningkatkan kompetensi kerja Anda.
+    </p>
+    <div
+      class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+    >
+      <a
+        href="#programs"
+        class="btn-gold text-white font-medium rounded-lg px-6 py-3 text-center transition-all hover:opacity-90 shadow-lg"
       >
-        <img
-          src="images/1.jpg"
-          alt="Grup profesional sedang belajar di ruang kelas modern"
-          class="w-full h-full object-cover opacity-80"
-        />
-      </div>
-    </section>
+        Lihat Program
+      </a>
+      <a
+        href="#contact"
+        class="btn-blue text-white font-medium rounded-lg px-6 py-3 text-center transition-all hover:opacity-90 shadow-lg"
+      >
+        Daftar Sekarang
+      </a>
+    </div>
+  </div>
+
+  <!-- Gambar kanan (desktop) -->
+  <div
+    class="hidden md:block relative w-full md:w-1/2 h-[300px] md:h-full overflow-hidden rounded-t-3xl md:rounded-l-full md:rounded-t-none mt-10 md:mt-0"
+  >
+    <img
+      src="images/1.jpg"
+      alt="Grup profesional sedang belajar di ruang kelas modern"
+      class="w-full h-full object-cover opacity-80"
+    />
+  </div>
+</section>
+
 
     <section
       id="about"
