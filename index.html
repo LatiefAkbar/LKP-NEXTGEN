@@ -260,29 +260,22 @@
 
     <section
       id="home"
-      class="hero-gradient text-white relative overflow-hidden h-[550px] flex items-center"
+      class="hero-gradient text-white relative overflow-hidden flex flex-col md:flex-row items-center h-auto md:h-[550px]"
     >
-      <!-- Gambar kanan full setengah section -->
-      <div
-        class="absolute top-0 right-0 w-1/2 h-full overflow-hidden rounded-l-full"
-      >
-        <img
-          src="images/1.jpg"
-          alt="Grup profesional sedang belajar di ruang kelas modern"
-          class="w-full h-full object-cover opacity-80"
-        />
-      </div>
-
       <!-- Konten kiri -->
-      <div class="relative z-10 w-full md:w-1/2 px-8 md:pl-20 lg:pl-28">
+      <div
+        class="relative z-10 w-full md:w-1/2 px-6 sm:px-10 md:pl-20 lg:pl-28 py-16 md:py-0 text-center md:text-left"
+      >
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
           Kembangkan Skill Profesional Anda Bersama Kami
         </h1>
-        <p class="text-lg md:text-xl mb-8 opacity-90 max-w-md">
+        <p class="text-lg md:text-xl mb-8 opacity-90 max-w-md mx-auto md:mx-0">
           LPK NexGen menyediakan pelatihan berkualitas dengan sertifikasi resmi
           untuk meningkatkan kompetensi kerja Anda.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+        >
           <a
             href="#programs"
             class="btn-gold text-white font-medium rounded-lg px-6 py-3 text-center transition-all hover:opacity-90 shadow-lg"
@@ -296,6 +289,17 @@
             Daftar Sekarang
           </a>
         </div>
+      </div>
+
+      <!-- Gambar kanan (desktop) / bawah (mobile) -->
+      <div
+        class="relative w-full md:w-1/2 h-[300px] md:h-full overflow-hidden rounded-t-3xl md:rounded-l-full md:rounded-t-none mt-10 md:mt-0"
+      >
+        <img
+          src="images/1.jpg"
+          alt="Grup profesional sedang belajar di ruang kelas modern"
+          class="w-full h-full object-cover opacity-80"
+        />
       </div>
     </section>
 
@@ -317,7 +321,7 @@
       <!-- Konten -->
       <div class="relative z-10 text-center max-w-5xl px-6">
         <h2
-          class="text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-300 to-white"
+          class="text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-blue-400 to-blue-200 drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]"
         >
           Gerbang Anda Menuju Karier Profesional
         </h2>
@@ -423,268 +427,6 @@
           animation: float3 5s ease-in-out infinite;
         }
       </style>
-    </section>
-
-    <section id="team" class="pt-24 pb-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Tim di Balik LPK NexGen
-          </h2>
-          <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Kami didukung oleh tim profesional yang berdedikasi untuk kesuksesan
-            Anda.
-          </p>
-        </div>
-
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 team-grid-container"
-        >
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a0a7f1a3-671c-43f1-9457-3f33c3f91854.png"
-              alt="Foto Rina Wijaya"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  FAIZAL ARYA PUTU N
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">CEO of LKP-NexGen</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Faizal merancang kurikulum yang relevan dengan kebutuhan
-                  industri terkini.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/Suci.JPG"
-              alt="Foto Adi Prasetyo"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  SUCI AMELIA ARIFIN
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">Bendahara</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Suci mengatur keuangan dan administrasi yang praktis dalam
-                  setiap sesi pelatihan.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/Fara.JPG"
-              alt="Foto Sari Lestari"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  FARA DIANA OLIFIANI
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">Sekretaris</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Fara membantu calon siswa memilih program yang paling sesuai
-                  karir mereka.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/Ekal.jpg"
-              alt="Foto Dian Puspita"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  EKAL ARGA FRAIZY
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">
-                  Personalia dan Hubungan Industri
-                </p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Ekal bertanggung jawab atas strategi pemasaran dan promosi LKP
-                  NexGen.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/latief.jpg"
-              alt="Foto Eko Nugroho"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  LATIF AKBAR MAULANA
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">
-                  Departement IT Support
-                </p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Latif membangun jaringan kerjasama dengan berbagai perusahaan
-                  ternama.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/Af.jpg"
-              alt="Foto Joko Susilo"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">AFDHAL FAUZAN</h3>
-                <p class="text-blue-600 font-medium mb-3">IT Support</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Joko memastikan semua infrastruktur teknologi berjalan lancar
-                  dan aman.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/Kiki.JPG"
-              alt="Foto Risky"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  RISKY BAYU ADITYA
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">
-                  Desain &amp; Kreatif
-                </p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Riky mengelola Editing dan Desain secara efisien.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
-          >
-            <img
-              src="images/Kiki.JPG"
-              alt="Foto Risky"
-              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
-            />
-            <div class="team-card-content">
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">
-                  RISKY BAYU ADITYA
-                </h3>
-                <p class="text-blue-600 font-medium mb-3">
-                  Desain &amp; Kreatif
-                </p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Riky mengelola Editing dan Desain secara efisien.
-                </p>
-              </div>
-              <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-gray-400 hover:text-blue-600"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section id="programs" class="py-16 bg-white">
@@ -949,6 +691,268 @@
               Profesional, Inovatif, Berintegritas, dan Berorientasi pada
               kesuksesan setiap siswa.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="pt-24 pb-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Tim di Balik LPK NexGen
+          </h2>
+          <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Kami didukung oleh tim profesional yang berdedikasi untuk kesuksesan
+            Anda.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 team-grid-container"
+        >
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a0a7f1a3-671c-43f1-9457-3f33c3f91854.png"
+              alt="Foto Rina Wijaya"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  FAIZAL ARYA PUTU N
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">CEO of LKP-NexGen</p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Faizal merancang kurikulum yang relevan dengan kebutuhan
+                  industri terkini.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/Suci.JPG"
+              alt="Foto Adi Prasetyo"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  SUCI AMELIA ARIFIN
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">Bendahara</p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Suci mengatur keuangan dan administrasi yang praktis dalam
+                  setiap sesi pelatihan.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/Fara.JPG"
+              alt="Foto Sari Lestari"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  FARA DIANA OLIFIANI
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">Sekretaris</p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Fara membantu calon siswa memilih program yang paling sesuai
+                  karir mereka.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/Ekal.jpg"
+              alt="Foto Dian Puspita"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  EKAL ARGA FRAIZY
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">
+                  Personalia dan Hubungan Industri
+                </p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Ekal bertanggung jawab atas strategi pemasaran dan promosi LKP
+                  NexGen.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/latief.jpg"
+              alt="Foto Eko Nugroho"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  LATIF AKBAR MAULANA
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">
+                  Departement IT Support
+                </p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Latif membangun jaringan kerjasama dengan berbagai perusahaan
+                  ternama.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/Af.jpg"
+              alt="Foto Joko Susilo"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">AFDHAL FAUZAN</h3>
+                <p class="text-blue-600 font-medium mb-3">IT Support</p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Joko memastikan semua infrastruktur teknologi berjalan lancar
+                  dan aman.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/Kiki.JPG"
+              alt="Foto Risky"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  RISKY BAYU ADITYA
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">
+                  Desain &amp; Kreatif
+                </p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Riky mengelola Editing dan Desain secara efisien.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-md p-6 text-center card-hover team-card"
+          >
+            <img
+              src="images/Kiki.JPG"
+              alt="Foto Risky"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover ring-4 ring-blue-100"
+            />
+            <div class="team-card-content">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">
+                  RISKY BAYU ADITYA
+                </h3>
+                <p class="text-blue-600 font-medium mb-3">
+                  Desain &amp; Kreatif
+                </p>
+                <p class="text-gray-600 text-sm mb-4">
+                  Riky mengelola Editing dan Desain secara efisien.
+                </p>
+              </div>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
